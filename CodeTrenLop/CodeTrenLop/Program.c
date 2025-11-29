@@ -5,7 +5,25 @@ void kiemTraSoNguyen()
 	printf("Kiem Tra So Nguyen");
 	printf("\n");
 }
-
+void sapXepPhanTuMang()
+{
+	int mangSoNguyen[100];
+	int length;
+	printf("Nhap kich thuoc mang: ");
+	scanf_s("%d", &length);
+	printf("Nhap du lieu cho mang %d phan tu\n", length);
+	for (int i = 0; i < length; i++)
+	{
+		printf("mang[%d] = ", i);
+		scanf("%d", &mangSoNguyen[i]);
+	}
+	printf("Nhap du lieu cho mang %d phan tu\n", length);
+	for (int i = 0; i < length; i++)
+	{
+		printf("mang[%d] = %d", i, mangSoNguyen);
+		
+	}
+}
 void lapChucNang(int chonChucNang)
 {
 	int tiepTuc = 1;
@@ -17,7 +35,7 @@ void lapChucNang(int chonChucNang)
 			kiemTraSoNguyen();
 			break;
 		case 2:
-			// ham goi chuc nang 2
+			sapXepPhanTuMang();
 			break;
 		case 3:
 			// ham goi chuc nang 3
@@ -43,7 +61,7 @@ int main()
 		printf("\n");
 		printf("1. Kiem Tra So Nguyen");
 		printf("\n");
-		printf("2. TEN chuc nang 2");
+		printf("2. Sap xep phan tu mang 1 chieu");
 		printf("\n");
 		printf("3. TEN chuc nang 3");
 		printf("\n");
