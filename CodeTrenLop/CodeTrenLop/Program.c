@@ -2,50 +2,10 @@
 // Chuong trinh phan mem Bat dau thuc thi & Ket thuc o day.
 
 #include <stdio.h>
-void tinhTrungBinh()
-{
-	// Khai bao bien
-	int n;
-	int a[100];
-	// moi nhap
-	printf("Nhap so phan tu n: ");
-	scanf("%d", &n);
-	// Nhap mang
-	for (int i = 0; i < n; i++)
-	{
-		printf("Nhap a[%d]: ", i);
-		scanf("%d", &a[i]);
-	}
-	// tinh toan
-	int tong = 0;
-	float tb;
-	int count = 0;
-	// duyet mang
-	for (int i = 0; i < n; i++)
-	{
-		if (a[i] % 3 == 0)
-		{
-			tong += a[i];
-			count++;
-		}
-	}
-	if (count > 0)
-	{
-		tb = tong / count;
-		printf("Khong co phan tu nao chia het cho 3\n");
-	}
-	else
-	{
-		tb = (float)tong / count;
-		printf("Trung binh cong cac phan tu chia het cho 3 la: %.2f\n", tb);
-	}
-	return 0;
-}
-
 
 int main()
 {
-
+    printf("Hi there!\n");
 }
 
 // Debug/Run chuong trinh: bam "F5" hoac "Debug > Start Debugging" tren menu
